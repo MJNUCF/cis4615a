@@ -23,16 +23,19 @@ public class R14_SER00_J {
 
     /*
      * Rule 14. Serialization (SER)
-     * Incorrect code per:
+     * Correct code per:
      * https://wiki.sei.cmu.edu/confluence/display/java/SER00-J.+Enable+serialization+compatibility+during+class+evolution
      *
      *Rule 14-SER00
      */
      
+
 class GameWeapon implements Serializable {
-    int numOfWeapons = 10;
-     
-    public String toString() {
-        return String.valueOf(numOfWeapons);
-    }
+  private static final long serialVersionUID = 24L;
+ 
+  int numOfWeapons = 10;
+         
+  public String toString() {
+    return String.valueOf(numOfWeapons);
+  }
 }
