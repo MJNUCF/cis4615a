@@ -14,7 +14,7 @@ public class R07_ERR02_J {
 	
         /*
          * Rule 07. Exceptional Behavior (ERR)
-         * Incorrect code per:
+         * Corrected code per:
          * https://wiki.sei.cmu.edu/confluence/display/java/ERR02-J.+Prevent+exceptions+while+logging+data
          *
          * Rule 07-ERR02
@@ -22,10 +22,10 @@ public class R07_ERR02_J {
     
         try
         {
-        FileReader fr = new FileReader("C:\\Users\\pankaj\\Desktop\\test.txt"); 
+        FileReader fr = new FileReader("C:\\Users\\test\\test.txt"); 
         } catch (SecurityException se) {
             
-          System.err.println(se);
+          logger.log(Level.SEVERE, se);
           // Recover from exception
           
         }
@@ -35,4 +35,6 @@ public class R07_ERR02_J {
           
         }
     }
+
+
 }
