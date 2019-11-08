@@ -7,6 +7,10 @@
  *
  ******************************************************************************/
 
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
 public class R04_STR03_J {
 
     public static void main(String[] args) {
