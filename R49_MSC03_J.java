@@ -20,7 +20,7 @@ public class R49_MSC03_J {
         /*
          * Rule 49. Miscellaneous (MSC)
          * Corrected code per:
-         * https://wiki.sei.cmu.edu/confluence/display/java/MET01-J.+Never+use+assertions+to+validate+method+arguments
+         * https://wiki.sei.cmu.edu/confluence/display/java/MSC03-J.+Never+hard+code+sensitive+information
          *
          * Rule 49-MSC03
          */
