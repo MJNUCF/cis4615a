@@ -46,7 +46,15 @@ class SensitiveHash {
     }
  
     public void removeEntry(Object key) {
+        check("removeKeyPermission");
         ht.remove(key);
+    }
+
+    private void check(String directive) {
+        SecurityManager sm = System.getSecurityManager();
+        if (sm != null) {
+            sm.checkSecurityAccess(directive);
+        }
     }
     
     public void print() {
